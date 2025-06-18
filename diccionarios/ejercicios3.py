@@ -27,5 +27,8 @@ while estado:
         personas = cargar()
         mostrar(personas)
         print(busqueda(personas))
+        estado = False
     except ValueError:
-        print("")
+        print("Error")
+    finally:
+        print("App de personas")
